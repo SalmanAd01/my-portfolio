@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 
 const Index = () => {
-  const typeText = useRef<HTMLSpanElement>(null);
+  const typeText = useRef<HTMLParagraphElement>(null);
   const cursor = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
@@ -21,38 +21,36 @@ const Index = () => {
 
     function type() {
       if (charIndex < textArray[textArrayIndex].length) {
-        if (cursor.current && !cursor.current.classList.contains("typing"))
-          cursor.current.classList.add("typing");
-        if (typeText.current)
-          typeText.current.textContent +=
-            textArray[textArrayIndex].charAt(charIndex);
+        if (!cursor.current!.classList.contains("typing"))
+          cursor.current!.classList.add("typing");
+        typeText.current!.textContent +=
+          textArray[textArrayIndex].charAt(charIndex);
         charIndex++;
         setTimeout(type, typingDelay);
       } else {
-        if (cursor.current) cursor.current.classList.remove("typing");
+        cursor.current!.classList.remove("typing");
         setTimeout(erase, newTextDelay);
       }
     }
 
     function erase() {
       if (charIndex > 0) {
-        if (cursor.current && !cursor.current.classList.contains("typing"))
-          cursor.current.classList.add("typing");
-        if (typeText.current)
-          typeText.current.textContent = textArray[textArrayIndex].substring(
-            0,
-            charIndex - 1
-          );
+        if (!cursor.current!.classList.contains("typing"))
+          cursor.current!.classList.add("typing");
+        typeText.current!.textContent = textArray[textArrayIndex].substring(
+          0,
+          charIndex - 1
+        );
         charIndex--;
         setTimeout(erase, erasingDelay);
       } else {
-        if (cursor.current) cursor.current.classList.remove("typing");
+        cursor.current!.classList.remove("typing");
         textArrayIndex++;
         if (textArrayIndex >= textArray.length) textArrayIndex = 0;
         setTimeout(type, typingDelay + 1100);
       }
     }
-    if (textArray.length) setTimeout(type, newTextDelay + 250);
+      if (textArray.length) setTimeout(type, newTextDelay + 250);
   }, []);
 
   return (

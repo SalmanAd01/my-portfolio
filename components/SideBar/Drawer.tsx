@@ -1,10 +1,50 @@
-import NavBar from "../NavBar/Index";
+import { useEffect, useState } from "react";
 import {SideBarMenueList,SideBarSocial,SocialMedia} from "./data";
-const Right = ({ active, setActive }:{
-  active: boolean, setActive: React.Dispatch<React.SetStateAction<boolean>>
-}) => {
+const Drawer = () => {
+  const [active, setActive] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const windscroll = document.documentElement.scrollTop;
+
+      if (windscroll >= 0) {
+        const scrollToPage = document.querySelectorAll(".scroll-to-page");
+        scrollToPage.forEach((el: any, i) => {
+          const wscrolldecress = windscroll + 1;
+
+          if (el.offsetTop <= wscrolldecress - 0) {
+            const scrollNav = document.querySelectorAll(
+              ".scroll-nav .scroll-to"
+            );
+            scrollNav.forEach((el) => el.classList.remove("active"));
+            scrollNav[i].classList.add("active");
+
+            const scrollNavResponsive = document.querySelectorAll(
+              ".scroll-nav-responsive a"
+            );
+            scrollNavResponsive.forEach((el) => el.classList.remove("active"));
+            scrollNavResponsive[i].classList.add("active");
+          }
+        });
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
+          <span
+        className="icon-menu"
+        onClick={() => {
+          setActive(!active);
+        }}
+      >
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </span>
       <div className={"responsive-sidebar-menu " + (active ? "active" : "")}>
         <div
           className="overlay"
@@ -50,33 +90,8 @@ const Right = ({ active, setActive }:{
           </div>
         </div>
       </div>
-      <NavBar />
-      <div className="left-sidebar">
-        <div className="sidebar-header d-flex align-items-center justify-content-between">
-          <h1 className="logo">Salman</h1>
-          <span className="designation">Third Year Student | B.E IT</span>
-        </div>
-        <img className="me" src="images/me.jpg" alt="Me" />
-        <h2 className="email">salmanadhikari415@gmail.com</h2>
-        <h2 className="address">Navi Mumbai, India</h2>
-
-        <ul className="social-profile d-flex align-items-center flex-wrap justify-content-center">
-          {SocialMedia.map((item, index) => {
-            return (
-              <li key={index}>
-                <a href={item.href} target="_blank">
-                  <i className={item.icon}></i>
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-        <a href="" className="theme-btn">
-          <i className="las la-envelope"></i> Contact Me!
-        </a>
-      </div>
     </>
   );
 };
 
-export default Right;
+export default Drawer;

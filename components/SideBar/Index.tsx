@@ -1,12 +1,13 @@
-import React from "react";
-import Right from "./Right";
-
-const Index = ({active, setActive}:
-  {active: boolean, setActive: React.Dispatch<React.SetStateAction<boolean>>}
-  ) => {
+import Drawer from "./Drawer";
+import RightSideBar from './RightSideBar'
+import LeftSideBar from "./LeftSideBar";
+const Index = () => {
   return (
     <>
-      <Right active={active}  setActive={setActive}/>
+      <Drawer/>
+      <RightSideBar />
+      <LeftSideBar />
+
     </>
   );
 };
