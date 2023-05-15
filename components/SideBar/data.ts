@@ -1,4 +1,5 @@
-const SideBarMenueList = [
+import {SocialMediaType,MenueListType} from '../../@types/types'
+const SideBarMenueList:Array<MenueListType> = [
     {
       href: "#home",
       icon: "las la-home",
@@ -25,7 +26,7 @@ const SideBarMenueList = [
       title: "Portfolios",
     },
   ];
-  const SideBarSocial = [
+  const SideBarSocial:Array<SocialMediaType> = [
     {
       href: "https://twitter.com/AdhikariSalman?t=RxCEcOAXyNev9pp2-HWnxQ&s=09",
       icon: "lab la-twitter",
@@ -40,7 +41,7 @@ const SideBarMenueList = [
     },
   ];
 
-  const SocialMedia = [
+  const SocialMedia:Array<SocialMediaType> = [
     {
       href: "https://twitter.com/AdhikariSalman?t=RxCEcOAXyNev9pp2-HWnxQ&s=09",
       icon: "lab la-twitter",
