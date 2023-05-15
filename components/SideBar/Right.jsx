@@ -1,6 +1,5 @@
-import { useState } from "react";
 import NavBar from "../NavBar/Index";
-
+import {SideBarMenueList,SideBarSocial,SocialMedia} from "./data";
 const Right = ({ active, setActive }) => {
   return (
     <>
@@ -15,89 +14,36 @@ const Right = ({ active, setActive }) => {
           <div className="menu-wrap">
             <p>Menu</p>
             <ul className="menu scroll-nav-responsive d-flex">
-              <li>
-                <a
-                  className="scroll-to"
-                  href="#home"
-                  onClick={() => {
-                    setActive(false);
-                  }}
-                >
-                  <i className="las la-home"></i> <span>Home</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="scroll-to"
-                  href="#about"
-                  onClick={() => {
-                    setActive(false);
-                  }}
-                >
-                  <i className="lar la-user"></i> <span>About</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="scroll-to"
-                  href="#resume"
-                  onClick={() => {
-                    setActive(false);
-                  }}
-                >
-                  <i className="las la-briefcase"></i> <span>Resume</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="scroll-to"
-                  href="#skills"
-                  onClick={() => {
-                    setActive(false);
-                  }}
-                >
-                  <i className="las la-shapes"></i> <span>Skills</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="scroll-to"
-                  href="#portfolio"
-                  onClick={() => {
-                    setActive(false);
-                  }}
-                >
-                  <i className="las la-grip-vertical"></i>{" "}
-                  <span>Portfolios</span>
-                </a>
-              </li>
+              {SideBarMenueList.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <a
+                      className="scroll-to"
+                      href={item.href}
+                      onClick={() => {
+                        setActive(false);
+                      }}
+                    >
+                      <i className={item.icon}></i> <span>{item.title}</span>
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
           <div className="sidebar-social">
             <p>Social</p>
             <ul className="social-links d-flex align-items-center">
-              <li>
-                <a
-                  href="https://twitter.com/AdhikariSalman?t=RxCEcOAXyNev9pp2-HWnxQ&s=09"
-                  target="_blank"
-                >
-                  <i className="lab la-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/SalmanAd01" target="_blank">
-                  <i className="lab la-github"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/salman-adhikari-a938911bb/h"
-                  target="_blank"
-                >
-                  <i className="lab la-linkedin-in"></i>
-                </a>
-              </li>
+              {SideBarSocial.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <a href={item.href} target="_blank">
+                      <i className={item.icon}></i>
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
@@ -113,32 +59,15 @@ const Right = ({ active, setActive }) => {
         <h2 className="address">Navi Mumbai, India</h2>
 
         <ul className="social-profile d-flex align-items-center flex-wrap justify-content-center">
-          <li>
-            <a
-              href="https://twitter.com/AdhikariSalman?t=RxCEcOAXyNev9pp2-HWnxQ&s=09"
-              target="_blank"
-            >
-              <i className="lab la-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/salman-adhikari-a938911bb/"
-              target="_blank"
-            >
-              <i className="lab la-linkedin-in"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://leetcode.com/SalmanAd01/" target="_blank">
-              <i className="las la-code"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/SalmanAd01" target="_blank">
-              <i className="lab la-github"></i>
-            </a>
-          </li>
+          {SocialMedia.map((item, index) => {
+            return (
+              <li key={index}>
+                <a href={item.href} target="_blank">
+                  <i className={item.icon}></i>
+                </a>
+              </li>
+            );
+          })}
         </ul>
         <a href="" className="theme-btn">
           <i className="las la-envelope"></i> Contact Me!

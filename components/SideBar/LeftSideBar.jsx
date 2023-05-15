@@ -1,3 +1,4 @@
+import { SocialMedia } from "./data";
 const LeftSideBar = () => {
   return (
     <div className="left-sidebar">
@@ -10,32 +11,15 @@ const LeftSideBar = () => {
       <h2 className="address">Navi Mumbai, India</h2>
 
       <ul className="social-profile d-flex align-items-center flex-wrap justify-content-center">
-        <li>
-          <a
-            href="https://twitter.com/AdhikariSalman?t=RxCEcOAXyNev9pp2-HWnxQ&s=09"
-            target="_blank"
-          >
-            <i className="lab la-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/salman-adhikari-a938911bb/"
-            target="_blank"
-          >
-            <i className="lab la-linkedin-in"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://leetcode.com/SalmanAd01/" target="_blank">
-            <i className="las la-code"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/SalmanAd01" target="_blank">
-            <i className="lab la-github"></i>
-          </a>
-        </li>
+      {SocialMedia.map((item, index) => {
+            return (
+              <li key={index}>
+                <a href={item.href} target="_blank">
+                  <i className={item.icon}></i>
+                </a>
+              </li>
+            );
+          })}
       </ul>
       <a href="" className="theme-btn">
         <i className="las la-envelope"></i> Contact Me!

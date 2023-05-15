@@ -132,7 +132,6 @@ export default function Home(this: any) {
 
   return (
     <>
-      {/* <ScrollToPage/> */}
       <div className="page-loader"  ref={pageLoaderRef}>
         <div className="bounceball"></div>
       </div>
