@@ -2,13 +2,13 @@
 import { useEffect, useRef } from "react";
 
 const Index = () => {
-  const myAge = useRef(this);
+  const myAge = useRef<HTMLParagraphElement>(null);
   useEffect(() => {
     const myBirthDate = new Date("2003-01-08");
     const myAgeInMilliseconds = Date.now() - myBirthDate.getTime();
     const myAgeDate = new Date(myAgeInMilliseconds);
     const myAgeVal = Math.abs(myAgeDate.getUTCFullYear() - 1970);
-    myAge.current.innerHTML = myAgeVal;
+    if (myAge.current) myAge.current.innerHTML = myAgeVal.toString();
   }, []);
   return (
     <section className="about-area page-section scroll-to-page" id="about">

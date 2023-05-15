@@ -1,6 +1,8 @@
 import NavBar from "../NavBar/Index";
 import {SideBarMenueList,SideBarSocial,SocialMedia} from "./data";
-const Right = ({ active, setActive }) => {
+const Right = ({ active, setActive }:{
+  active: boolean, setActive: React.Dispatch<React.SetStateAction<boolean>>
+}) => {
   return (
     <>
       <div className={"responsive-sidebar-menu " + (active ? "active" : "")}>
