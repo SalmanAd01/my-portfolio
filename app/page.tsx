@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
 import "./responsive.css";
 import SideBar from "../components/SideBar/Index";
-import NavBar from "../components/NavBar/Index";
 import LeftSideBar from "../components/SideBar/LeftSideBar";
 import Hero from "../components/Hero/Index";
 import About from "../components/About/Index";
@@ -13,20 +12,15 @@ import { useEffect, useRef, useState } from "react";
 import jQuery from "jquery";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
-// import ScrollToPage from "./scroll";
 export default function Home(this: any) {
   const [active, setActive] = useState(false);
   const pageLoaderRef = useRef(null);
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.min.js");
-    // require("./script.js")
-  }, []);
-  useEffect(() => {
     const loader = pageLoaderRef.current! as any;
     const delay = 500;
     const fadeOutDuration = 1000;
-
+  
     setTimeout(() => {
       loader.style.opacity = 0;
       setTimeout(() => {
