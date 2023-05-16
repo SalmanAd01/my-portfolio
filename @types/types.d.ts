@@ -8,3 +8,8 @@ export interface MenueListType extends SocialMedia{
     icon: string
     title: string
 }
+
+export type skillsType = {
+    src: string,
+    name: string
+}

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 
 const Index = () => {
@@ -50,7 +51,7 @@ const Index = () => {
         setTimeout(type, typingDelay + 1100);
       }
     }
-      if (textArray.length) setTimeout(type, newTextDelay + 250);
+    if (textArray.length) setTimeout(type, newTextDelay + 250);
   }, []);
 
   return (
@@ -85,7 +86,12 @@ const Index = () => {
             className="go-to-project-btn scroll-to scroll-animation"
             data-animation="rotate_up"
           >
-            <img src="/images/round-text.png" alt="" />
+            <Image
+              src="/images/round-text.png"
+              alt=""
+              width={150}
+              height={150}
+            />
             <i className="las la-arrow-down"></i>
           </a>
 
