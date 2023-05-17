@@ -1,0 +1,213 @@
+
+
+@media (max-width: 2000px) {
+    .left-sidebar {
+        max-width: 400px;
+    }
+    .left-sidebar .sidebar-header {
+        margin-bottom: 30px;
+    }
+    .left-sidebar .social-profile {
+        margin-bottom: 30px;
+    }
+    .left-sidebar .copyright {
+        margin-bottom: 25px;
+    }
+    
+    .menu {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 1555px) {
+    .left-sidebar {
+        max-width: 350px;
+        padding: 30px;
+    }
+    .left-sidebar > img.me {
+        width: 100%;
+        max-width: 200px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 46px;
+    }
+    .left-sidebar .sidebar-header .designation {
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 1220px) {
+    .custom-container {
+        max-width: 767px;
+    }
+    .content-width {
+        max-width: 100%;
+    }
+    .section-header h1 br {
+        display: none;
+    }
+    .left-sidebar {
+        position: relative;
+        max-width: 767px;
+        left: 0;
+        margin: auto;
+        top: 0;
+        transform: translateY(0);
+        margin-top: 20px;
+        display: none;
+    }
+
+    .drake-main .left-sidebar {
+        display: block;
+    }
+    .left-sidebar > img.me {
+        width: auto;
+    }
+    .icon-menu {
+        position: fixed;
+    }
+    .menu {
+        display: none !important;
+    }
+    .responsive-sidebar-menu .sidebar-menu-inner .menu-wrap .menu {
+        display: flex !important;
+    }
+    .resume-area,
+    .about-area {
+        padding-bottom: 50px;
+    }
+    .about-area .about-content p {
+        max-width: 100%;
+    }
+    .testimonial-area {
+        padding-top: 50px;
+    }
+}
+@media (max-width: 787px) {
+    .hero-section .hero-content h1 {
+        font-size: 58px;
+        line-height: 1.3;
+    }
+    .hero-section .hero-content .facts h1 {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 767px) {
+    .icon-menu {
+        right: 30px;
+        top: 30px;
+    }
+    .hero-section .hero-content .go-to-project-btn {
+        margin-left: 0;
+    }
+    .skills-area .skills-content .row .col-md-3 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .header-area .custom-container .row .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .header-area .header-right .show-menu-toggle  {
+        display: flex;
+    }
+    .header-area .header-right nav {
+        position: fixed;
+        right: 0;
+        max-width: 350px;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background: #1f1f1f;
+        padding: 60px 40px 40px 40px;
+        overflow-x: hidden;
+        top: 0;
+        margin-right: -300px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .header-area .header-right nav.active {
+        opacity: 1;
+        margin-right: 0;
+        visibility: visible;
+    }
+    .header-area nav .nav-menu li + li {
+        margin-top: 10px;
+    }
+    .header-area .header-right nav .nav-menu {
+        display: block;
+    }
+    .header-area nav .close-menu {
+        display: block;
+    }
+    .header-area nav .nav-menu li {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .header-area nav .nav-menu li a {
+        flex: 1;
+    }
+    .header-area nav .nav-menu li .dropdown {
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+        display: none;
+    }
+    .header-area nav .nav-menu li .dropdown li a {
+        font-size: 14px;
+    }
+    .header-area nav .nav-menu li .dropdown li {
+        margin: 0;
+    }
+    .header-area nav .nav-menu li .toggle-sub-dropdown,
+    .header-area nav .nav-menu li .toggle-dropdown {
+        display: block;
+    }
+    .header-area nav .nav-menu li .dropdown li .dropdown {
+        padding-left: 15px;
+        left: 0;
+    }
+    .header-area nav .nav-menu li.active > .dropdown {
+        display: block;
+    }
+}
+@media (max-width: 584px) {
+    .subtitle {
+        margin-bottom: 40px;
+    }
+    .section-header h1 {
+        font-size: 38px;
+        line-height: 1.4;
+    }
+    .skills-area,
+    .resume-area,
+    .about-area,
+    .hero-section {
+        padding-bottom: 0;
+    }
+    .hero-section .hero-content h1 {
+        font-size: 50px;
+    }
+    .hero-section .hero-content .facts h1 {
+        font-size: 48px;
+        margin-bottom: 25px;
+    }
+    .hero-section .hero-content .facts p br {
+        display: none;
+    }
+    .hero-section .hero-content .facts {
+        gap: 20px;
+    }
+    .resume-area .resume-content .resume-timeline .item {
+        padding-left: 50px;
+    }
+    .portfolio-area {
+        padding-top: 40px;
+    }
+    
+}

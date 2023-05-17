@@ -87,7 +87,7 @@ const Index = () => {
             data-animation="rotate_up"
           >
             <Image
-              src="/images/round-text.png"
+              src="./images/round-text.png"
               alt=""
               width={150}
               height={150}
