@@ -9,7 +9,7 @@ const LeftSideBar = () => {
       </div>
       <Image 
       className="me" 
-      src="./images/me.jpg" 
+      src="/images/me.jpg" 
       alt="Me"
       width={350}
       height={300}

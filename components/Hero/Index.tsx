@@ -8,10 +8,10 @@ const Index = () => {
 
   useEffect(() => {
     const textArray = [
-      "Machine Learning App",
-      "Full Stack App",
-      "Devops",
-      "Flutter App",
+      "Machine Learning Developer",
+      "Full Stack Developer",
+      "Devops Engineer",
+      "Flutter Developer",
       "Software Engineer",
     ];
     const typingDelay = 100;
@@ -66,8 +66,8 @@ const Index = () => {
               <i className="las la-home"></i> Introduce
             </h4>
             <h1 className="scroll-animation" data-animation="fade_from_bottom">
-              Hi I&lsquo;m <span>Salman Adhikari</span>, I design and develope{" "}
-              <span className="typed-text" ref={typeText}></span>
+              Hi I&rsquo;m <span>Salman Adhikari</span>
+              <span className="typed-text" ref={typeText} style={{display:"block"}}></span>
               <span className="cursor" ref={cursor}>
                 &nbsp;
               </span>
@@ -87,7 +87,7 @@ const Index = () => {
             data-animation="rotate_up"
           >
             <Image
-              src="./images/round-text.png"
+              src="/images/round-text.png"
               alt=""
               width={150}
               height={150}
