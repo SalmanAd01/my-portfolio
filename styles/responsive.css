@@ -197,6 +197,7 @@
     .hero-section .hero-content .facts h1 {
         font-size: 48px;
         margin-bottom: 25px;
+        height: 3rem !important;
     }
     .hero-section .hero-content .facts p br {
         display: none;

@@ -516,6 +516,14 @@ ul {
     font-weight: 300;
     height: 10rem;
 }
+.hero-section .hero-content .facts h1 {
+    font-size: 42px;
+    letter-spacing: -0.2px;
+    line-height: 60px;
+    margin-bottom: 43px;
+    font-weight: 300;
+    height: 3.5rem;
+}
 .hero-section .hero-content h1 span {
     color: var(--primary_color);
 }
@@ -751,4 +759,12 @@ body .body-overlay {
 }
 .portfolio-items .portfolio-item:hover h2 a {
     border-color: #ffffff;
+}
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
