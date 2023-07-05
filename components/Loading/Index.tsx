@@ -1,17 +1,19 @@
-import React, { useEffect, useRef } from "react";const Index = () => {
+import React, { useEffect, useRef } from "react";
+const Index = () => {
   const pageLoaderRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.min.js");
     const loader = pageLoaderRef.current! as HTMLDivElement;
     const delay: number = 500;
     const fadeOutDuration:number = 1000;
-
+    if (loader) {
     setTimeout(() => {
-      loader.style.opacity = "0";
+      loader.classList.add('fade-out');
       setTimeout(() => {
-        loader.style.display = "none";
-      }, fadeOutDuration);
+        loader.style.display = 'none';
+      }, fadeOutDuration); 
     }, delay);
+    }
   }, []);
   return (
     <div className="page-loader" ref={pageLoaderRef}>
