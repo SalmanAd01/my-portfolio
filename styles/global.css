@@ -723,6 +723,7 @@ body .body-overlay {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
 }
 .portfolio-items .portfolio-item .portfolio-item-inner .portfolio-categories {
     position: absolute;

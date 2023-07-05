@@ -84,6 +84,11 @@ const Index = () => {
               window.open(PortfolioData[slide.index].projectUrl, "_blank");
             },
           }}
+          styles={{
+            slide:{
+              cursor: "pointer"
+            },
+          }}
         />
       )}
     </>
