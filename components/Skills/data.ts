@@ -1,6 +1,6 @@
 import { skillsType } from "@/@types/types";
 
-const classNameAnimation:Array<String> = [
+const classNameAnimation: Array<String> = [
   "fade_from_left",
   "fade_from_bottom",
   "fade_from_top",
@@ -33,6 +33,34 @@ const skills: Array<skillsType> = [
     name: "ReactJS",
   },
   {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1688573801/Portfolio%20Assets/Skills/Flutter.png",
+    name: "Flutter",
+  },
+  {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1688573666/Portfolio%20Assets/Skills/grid_landscape-removebg-preview_y1mpyf.png",
+    name: "Scikit-Learn",
+  },
+  {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328576/GithubProfile/img/postgresql_p9fgv2.svg",
+    name: "PostgreSQL",
+  },
+  {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328576/GithubProfile/img/mongodb_nudqw4.png",
+    name: "MongoDB",
+  },
+  {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1688573761/Portfolio%20Assets/Skills/Redis.png",
+    name: "Redis",
+  },
+  {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328573/GithubProfile/img/firebase_a6xplw.png",
+    name: "Firebase",
+  },
+  {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1688573135/Portfolio%20Assets/Skills/330px-GraphQL_Logo.svg_xj1228.png",
+    name: "GraphQL",
+  },
+  {
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328573/GithubProfile/img/docker_tlltlc.png",
     name: "Docker",
   },
@@ -44,18 +72,7 @@ const skills: Array<skillsType> = [
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670329169/GithubProfile/img/download-removebg-preview_7_tkuqzw.png",
     name: "Digital Ocean",
   },
-  {
-    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328576/GithubProfile/img/postgresql_p9fgv2.svg",
-    name: "PostgreSQL",
-  },
-  {
-    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328576/GithubProfile/img/mongodb_nudqw4.png",
-    name: "MongoDB",
-  },
-  {
-    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328573/GithubProfile/img/firebase_a6xplw.png",
-    name: "Firebase",
-  },
+
 ];
 
 export { classNameAnimation, skills };
