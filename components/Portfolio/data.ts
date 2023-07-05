@@ -1,0 +1,86 @@
+import { PortfolioType } from "@/@types/types";
+
+const PortfolioData:Array<PortfolioType> = [
+    {
+      id: 1,
+      title: "Meal Diaries",
+      image: "/images/mealDiaries2.png",
+      categories: ["Nodejs", "Mongodb", "Firebase", "Docker", "CICD", "Jest"],
+      col: 12,
+      projectUrl: "https://github.com/SEM5-MiniProject/Backend",
+    },
+    {
+      id: 2,
+      title: "Synapse",
+      image: "/images/synapse.png",
+      categories: [
+        "Python",
+        "ML",
+        "MLOps",
+        "Flask",
+        "Docker",
+        "CICD",
+        "Firebase",
+      ],
+      col: 12,
+      projectUrl: "https://github.com/siesgstarena/synapse",
+    },
+    {
+      id: 3,
+      title: "Arena 2.0",
+      image: "/images/arena2.png",
+      categories: ["React", "GraphQL", "Nodejs"],
+      col: 12,
+      projectUrl: "https://github.com/siesgstarena/Arena-2.0",
+    },
+    {
+      id: 4,
+      title: "Arena Bot",
+      image: "/images/arenabot2.png",
+      categories: ["Nodejs", "Discord", "CICD", "Docker"],
+      col: 6,
+      projectUrl: "https://github.com/siesgstarena/Arena-bot",
+    },
+    {
+      id: 5,
+      title: "CP Bot",
+      image: "/images/cpbot2.png",
+      categories: ["Python", "API", "Discord"],
+      col: 6,
+      projectUrl: "https://github.com/SalmanAd01/CP-Bot",
+    },
+    {
+        id: 6,
+      title: "UptimeX",
+      image: "/images/uptimex.png",
+      categories: ["Nodejs", "Postgresql", "Heroku"],
+      col: 12,
+      projectUrl: "https://github.com/SalmanAd01/UptimeX",
+    },
+    {
+      id: 7,
+      title: "Raspberry Pi Attendance System",
+      image: "/images/raspberry2.png",
+      categories: ["Python", "Raspberry Pi", "Nodejs", "MongoDB", "Flutter"],
+      col: 6,
+      projectUrl: "https://github.com/SEM-6-MP2-0",
+    },
+    {
+      id: 8,
+      title: "Smart City",
+      image: "/images/smartcity2.png",
+      categories: ["Java", "GUI", "Postgresql"],
+      col: 6,
+      projectUrl: "https://github.com/Smart-City-JavaProject/Javafx_Gui",
+    },
+    {
+      id: 9,
+      title: "BookHub",
+      image: "/images/bookhub.png",
+      categories: ["Go","React","Postgresql","Docker","CICD"],
+      col: 12,
+      projectUrl: "https://github.com/SalmanAd01/BookHub",
+    },
+  ];
+
+export default PortfolioData;

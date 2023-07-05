@@ -13,3 +13,12 @@ export type skillsType = {
     src: string,
     name: string
 }
+
+export type PortfolioType = {
+    id: number,
+    title: string,
+    image: string,
+    categories: string[],
+    col: number,
+    projectUrl: string
+}

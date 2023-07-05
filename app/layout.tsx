@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "yet-another-react-lightbox/styles.css";
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",

@@ -5,6 +5,7 @@ import About from "./About/Index";
 import Resume from "./Resume/Index";
 import Skills from "./Skills/Index";
 import Loading from "./Loading/Index";
+import Portfolio from "./Portfolio/Index";
 const HomePage = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const HomePage = () => {
             <About />
             <Resume />
             <Skills />
+            <Portfolio />
           </div>
         </div>
       </main>
