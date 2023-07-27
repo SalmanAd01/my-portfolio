@@ -37,7 +37,7 @@ const skills: Array<skillsType> = [
     name: "Flutter",
   },
   {
-    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1688573666/Portfolio%20Assets/Skills/grid_landscape-removebg-preview_y1mpyf.png",
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1688573666/Portfolio%20Assets/Skills/Scikit-Learn.png",
     name: "Scikit-Learn",
   },
   {
