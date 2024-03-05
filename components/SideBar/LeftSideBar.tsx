@@ -29,7 +29,7 @@ const LeftSideBar = () => {
             );
           })}
       </ul>
-      <a href="" className="theme-btn">
+      <a href="mailto: salmanadhikari415@gmail.com" className="theme-btn">
         <i className="las la-envelope"></i> Contact Me!
       </a>
     </div>
