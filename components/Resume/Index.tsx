@@ -88,7 +88,7 @@ const Index = () => {
               <i className="las la-briefcase"></i> Resume
             </h4>
             <h1 className="scroll-animation" data-animation="fade_from_bottom">
-              Education &<span>Experience</span>
+              Education & <span>Experience</span>
             </h1>
           </div>
 
