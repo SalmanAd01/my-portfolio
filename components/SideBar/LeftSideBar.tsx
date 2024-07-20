@@ -9,7 +9,7 @@ const LeftSideBar = () => {
       </div>
       <Image 
       className="me" 
-      src="/images/me.jpg" 
+      src="https://res.cloudinary.com/dvdi2oaso/image/upload/v1721501848/Portfolio%20Assets/Assets/me_ybhuz2.jpg" 
       alt="Me"
       width={350}
       height={300}

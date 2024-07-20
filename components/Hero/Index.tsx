@@ -87,7 +87,7 @@ const Index = () => {
             data-animation="rotate_up"
           >
             <Image
-              src="/images/round-text.png"
+              src="https://res.cloudinary.com/dvdi2oaso/image/upload/v1721501848/Portfolio%20Assets/Assets/round-text_hqoe5z.png"
               alt=""
               width={150}
               height={150}
