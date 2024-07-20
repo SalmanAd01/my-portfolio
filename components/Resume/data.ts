@@ -2,11 +2,29 @@ import { ResumeOrderedDataItem } from "@/@types/types";
 
 const orderedData: ResumeOrderedDataItem[] = [
   {
+    key: "2024 Jul - Present",
+    value: [
+      {
+        title: "SDE - I",
+        content: "nVent",
+      },
+    ],
+  },
+  {
+    key: "2024 Jan - 2024 June",
+    value: [
+      {
+        title: "Software Intern",
+        content: "nVent",
+      },
+    ],
+  },
+  {
     key: "2020 June - 2024 June",
     value: [
       {
         title: "Bachelor of Engineering IT",
-        content: "Average cgpa: 9.6",
+        content: "Average cgpa: 9.56",
       },
       {
         title: "Backend Intern",
@@ -24,19 +42,6 @@ const orderedData: ResumeOrderedDataItem[] = [
       {
         title: "MH-CET",
         content: "93.92%",
-      },
-    ],
-  },
-  {
-    key: "2018",
-    value: [
-      {
-        title: "10th Maharashtra Board",
-        content: "86%",
-      },
-      {
-        title: "MH-CIT",
-        content: "95%",
       },
     ],
   },

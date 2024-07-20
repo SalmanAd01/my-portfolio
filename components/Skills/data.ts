@@ -14,15 +14,19 @@ const skills: Array<skillsType> = [
   },
   {
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328574/GithubProfile/img/js_vno7zo.svg",
-    name: "Javascript",
+    name: "JavaScript",
   },
   {
-    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328575/GithubProfile/img/java_yuexnz.png",
-    name: "Java",
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1721493953/Portfolio%20Assets/Skills/Typescript_logo_2020.svg_zrbzap.png",
+    name: "TypeScript",
   },
   {
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328574/GithubProfile/img/go-original_wdujrt.svg",
     name: "Go",
+  },
+  {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328575/GithubProfile/img/java_yuexnz.png",
+    name: "Java",
   },
   {
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328576/GithubProfile/img/node_t425ha.svg",
@@ -65,8 +69,20 @@ const skills: Array<skillsType> = [
     name: "Docker",
   },
   {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1721494004/Portfolio%20Assets/Skills/Kubernetes_logo_without_workmark_kgtwkb.svg",
+    name: "Kubernetes",
+  },
+  {
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328574/GithubProfile/img/githubaction_n5inky.png",
     name: "Github Action",
+  },
+  {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1721494026/Portfolio%20Assets/Skills/terraform-icon-1803x2048-hodrzd3t_rqjlp8.png",
+    name: "Terraform",
+  },
+  {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1721494048/Portfolio%20Assets/Skills/google-cloud-icon-2048x1646-7admxejz_dwwgn9.png",
+    name: "Google Cloud",
   },
   {
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670329169/GithubProfile/img/download-removebg-preview_7_tkuqzw.png",
