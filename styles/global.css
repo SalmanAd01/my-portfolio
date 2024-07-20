@@ -318,6 +318,7 @@ ul {
 .responsive-sidebar-menu .sidebar-menu-inner .sidebar-social {
     width: 46%;
     margin: auto;
+    margin-bottom: 30px;
 }
 .responsive-sidebar-menu .sidebar-menu-inner .sidebar-social ul {
     gap: 15px;
@@ -852,4 +853,8 @@ body .body-overlay {
 .fade-out {
     opacity: 0;
     transition: opacity 1s;
+}
+
+.coding-links li{
+    margin: 5px 0px;
 }

@@ -3,6 +3,12 @@ export interface SocialMediaType {
   icon: string;
 }
 
+export interface CodingProfileType {
+  href: string;
+  username: string;
+  platform: string;
+}
+
 export interface MenueListType extends SocialMedia {
   href: string;
   icon: string;

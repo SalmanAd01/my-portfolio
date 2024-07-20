@@ -1,4 +1,4 @@
-import {SocialMediaType,MenueListType} from '../../@types/types'
+import {SocialMediaType,MenueListType, CodingProfileType} from '../../@types/types'
 const SideBarMenueList:Array<MenueListType> = [
     {
       href: "#home",
@@ -60,4 +60,27 @@ const SideBarMenueList:Array<MenueListType> = [
     },
   ];
 
-export {SideBarMenueList,SideBarSocial,SocialMedia};
+  const SideBarCodingProfile: Array<CodingProfileType> = [
+    {
+      href: "https://leetcode.com/SalmanAd01/",
+      username: "SalmanAd01",
+      platform: "leetcode"
+    },
+    {
+      href: "https://codeforces.com/profile/SalmanAd01",
+      username: "SalmanAd01",
+      platform: "codeforces"
+    },
+    {
+      href: "https://www.codechef.com/users/salmanad01",
+      username: "SalmanAd01",
+      platform: "codechef"
+    },
+    {
+      href: "https://atcoder.jp/users/SalmanAd01",
+      username: "SalmanAd01",
+      platform: "atcoder"
+    },
+  ]
+
+export {SideBarMenueList,SideBarSocial,SocialMedia,SideBarCodingProfile};

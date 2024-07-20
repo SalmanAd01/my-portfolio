@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import {SideBarMenueList,SideBarSocial,SocialMedia} from "./data";
+import {SideBarCodingProfile, SideBarMenueList,SideBarSocial,SocialMedia} from "./data";
+import Image from "next/image";
 const Drawer = () => {
   const [active, setActive] = useState(false);
   useEffect(() => {
@@ -82,6 +83,20 @@ const Drawer = () => {
                   <li key={index}>
                     <a href={item.href} target="_blank">
                       <i className={item.icon}></i>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="sidebar-social">
+            <p>Coding Profile</p>
+            <ul className="coding-links align-items-center">
+              {SideBarCodingProfile.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <a href={item.href} target="_blank">
+                    <i className="las la-code"></i> <span>{item.platform}</span>
                     </a>
                   </li>
                 );
