@@ -5,7 +5,7 @@ const LeftSideBar = () => {
     <div className="left-sidebar">
       <div className="sidebar-header d-flex align-items-center justify-content-between">
         <h1 className="logo">Salman</h1>
-        <span className="designation">Third Year Student | B.E IT</span>
+        <span className="designation">Software Developer</span>
       </div>
       <Image 
       className="me" 
