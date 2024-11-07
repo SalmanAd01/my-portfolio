@@ -3,7 +3,7 @@ import { PortfolioType } from "@/@types/types";
 const PortfolioData: Array<PortfolioType> = [
   {
     id: 1,
-    title: "Meal Diaries",
+    title: "Mentor Mentee Connects",
     image: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1730975152/Portfolio%20Assets/Group_79_ymxs3z.png",
     categories: ["Nodejs", "Go", "Typescript", "Mongodb", "Firebase", "Redis", "Jest", "Docker", "Kubernetes", "Terraform", "GCP", "VPC", "CICD", "Prometheus", "Grafana", "Loki"],
     col: 12,
