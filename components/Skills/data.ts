@@ -17,20 +17,20 @@ const skills: Array<skillsType> = [
     name: "JavaScript",
   },
   {
-    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1721493953/Portfolio%20Assets/Skills/Typescript_logo_2020.svg_zrbzap.png",
-    name: "TypeScript",
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328575/GithubProfile/img/java_yuexnz.png",
+    name: "Java",
   },
   {
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328574/GithubProfile/img/go-original_wdujrt.svg",
     name: "Go",
   },
   {
-    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328575/GithubProfile/img/java_yuexnz.png",
-    name: "Java",
-  },
-  {
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328576/GithubProfile/img/node_t425ha.svg",
     name: "NodeJS",
+  },
+  {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1743426456/Portfolio%20Assets/Skills/Angular.png",
+    name: "Angular",
   },
   {
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328577/GithubProfile/img/React_vsca7q.png",
