@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Salman Adhikari Portfolio",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1743570686/Portfolio%20Assets/titlelogo_uvhiui.png.png",
         width: 1200,
         height: 630,
         alt: "Salman Adhikari Portfolio",
@@ -44,9 +44,13 @@ export const metadata: Metadata = {
     title: "Salman Adhikari | Full Stack Developer",
     description:
       "Passionate Full Stack Developer specializing in backend development, machine learning, and DevOps.",
-    site: "@SalmanAd01",
-    images: ["/images/og-image.png"],
+    site: "@AdhikariSalman",
+    images: ["https://res.cloudinary.com/dvdi2oaso/image/upload/v1743570686/Portfolio%20Assets/titlelogo_uvhiui.png"],
   },
+
+  icons:{
+    icon: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1743570686/Portfolio%20Assets/titlelogo_uvhiui.png",
+  }
 };
 
 export default function RootLayout({
@@ -68,7 +72,6 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
-        <link rel="icon" href="/images/titlelogo.png" />
       </head>
       <body className={`body-page ${inter.className}`}>{children}</body>
     </html>
