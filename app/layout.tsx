@@ -2,7 +2,6 @@ import { Inter } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "yet-another-react-lightbox/styles.css";
 import { Metadata } from "next";
-import { Author } from "next/dist/lib/metadata/types/metadata-types";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,6 +21,32 @@ export const metadata: Metadata = {
   ],
   keywords:
     "Salman Adhikari, Full Stack Developer, Backend Developer, Machine Learning, DevOps, Software Engineer, Portfolio",
+  
+  openGraph: {
+    title: "Salman Adhikari | Full Stack Developer",
+    description:
+      "Passionate Full Stack Developer specializing in backend development, machine learning, and DevOps. Explore my portfolio to see my work and projects.",
+    type: "website",
+    url: "https://salmanad01.github.io/my-portfolio/",
+    siteName: "Salman Adhikari Portfolio",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Salman Adhikari Portfolio",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Salman Adhikari | Full Stack Developer",
+    description:
+      "Passionate Full Stack Developer specializing in backend development, machine learning, and DevOps.",
+    site: "@SalmanAd01",
+    images: ["/images/og-image.png"],
+  },
 };
 
 export default function RootLayout({
@@ -35,10 +60,6 @@ export default function RootLayout({
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{metadata.title?.toString()}</title>
-        <meta name="description" content={metadata.description!} />
-        <meta name="author" content={(metadata.authors as Author[])[0]!.name} />
-        <meta name="keywords" content={metadata.keywords?.toString()} />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
