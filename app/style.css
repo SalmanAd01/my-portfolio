@@ -724,7 +724,7 @@ body .body-overlay {
     bottom: 20px;
     left: 20px;
 }
-.portfolio-items .portfolio-item .portfolio-item-inner .portfolio-categories li a {
+.portfolio-items .portfolio-item .portfolio-item-inner .portfolio-categories li p {
     display: block;
     font-size: 14px;
     background: #fff;
@@ -732,10 +732,12 @@ body .body-overlay {
     padding: 7px 20px;
     border-radius: 19px;
     transition: .3s;
+    cursor: pointer !important;
 }
-.portfolio-items .portfolio-item:hover .portfolio-item-inner .portfolio-categories li a {
+.portfolio-items .portfolio-item:hover .portfolio-item-inner .portfolio-categories li p {
     background: #1f1f1f;
     color: #fff;
+    cursor: pointer !important;
 }
 .portfolio-items .portfolio-item h2 {
     font-size: 24px;

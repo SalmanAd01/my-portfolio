@@ -56,7 +56,13 @@ const Index = () => {
                       <ul className="portfolio-categories">
                         {item.categories.map((category, id) => (
                           <li key={id}>
-                            <a href="">{category}</a>
+                            <p
+                              onClick={() => {
+                                setIndexImage(item.id - 1);
+                              }}
+                            >
+                              {category}
+                            </p>
                           </li>
                         ))}
                       </ul>
@@ -85,8 +91,8 @@ const Index = () => {
             },
           }}
           styles={{
-            slide:{
-              cursor: "pointer"
+            slide: {
+              cursor: "pointer",
             },
           }}
         />
