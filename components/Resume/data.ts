@@ -2,28 +2,19 @@ import { ResumeOrderedDataItem } from "@/@types/types";
 
 const orderedData: ResumeOrderedDataItem[] = [
   {
-    key: "2025 Mar - 2025 Apr",
+    key: "2025 Apr - Present",
+    value: [
+      {
+        title: "Software Development Engineer - I",
+        content: "Fynd",
+      },
+    ],
+  },
+  {
+    key: "2024 Jan - 2025 Apr",
     value: [
       {
         title: "Associate Software Developer - II",
-        content: "nVent",
-      },
-    ],
-  },
-  {
-    key: "2024 Jul - 2025 Mar",
-    value: [
-      {
-        title: "Trainee Technologist",
-        content: "nVent",
-      },
-    ],
-  },
-  {
-    key: "2024 Jan - 2024 June",
-    value: [
-      {
-        title: "Software Intern",
         content: "nVent",
       },
     ],
