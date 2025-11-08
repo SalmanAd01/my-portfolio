@@ -17,6 +17,10 @@ const skills: Array<skillsType> = [
     name: "JavaScript",
   },
   {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1762608150/Portfolio%20Assets/Skills/csharp_logo_orq8sq.png",
+    name: "C#",
+  },
+  {
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328575/GithubProfile/img/java_yuexnz.png",
     name: "Java",
   },
@@ -25,8 +29,20 @@ const skills: Array<skillsType> = [
     name: "Go",
   },
   {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1762608890/Portfolio%20Assets/Skills/fast_api_logo_eiushu.png",
+    name: "FastAPI",
+  },
+  {
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328576/GithubProfile/img/node_t425ha.svg",
     name: "NodeJS",
+  },
+  {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1762608477/Portfolio%20Assets/Skills/128px-.NET_Core_Logo.svg_xmhlfj.png",
+    name: ".NET Core",
+  },
+  {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1762608637/Portfolio%20Assets/Skills/spring-boot-logo-icon-hd_kfeybv.png",
+    name: "Spring Boot",
   },
   {
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1743426456/Portfolio%20Assets/Skills/Angular.png",
