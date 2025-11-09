@@ -36,7 +36,7 @@ const SideBarMenueList:Array<MenueListType> = [
       icon: "lab la-github",
     },
     {
-      href: "https://www.linkedin.com/in/salman-adhikari-a938911bb/",
+      href: "https://www.linkedin.com/in/salman-adhikari/",
       icon: "lab la-linkedin-in",
     },
   ];
@@ -47,7 +47,7 @@ const SideBarMenueList:Array<MenueListType> = [
       icon: "lab la-twitter",
     },
     {
-      href: "https://www.linkedin.com/in/salman-adhikari-a938911bb/",
+      href: "https://www.linkedin.com/in/salman-adhikari/",
       icon: "lab la-linkedin-in",
     },
     {
