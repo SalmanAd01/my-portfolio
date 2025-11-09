@@ -57,10 +57,6 @@ const skills: Array<skillsType> = [
     name: "Flutter",
   },
   {
-    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1688573666/Portfolio%20Assets/Skills/Scikit-Learn.png",
-    name: "Scikit-Learn",
-  },
-  {
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328576/GithubProfile/img/postgresql_p9fgv2.svg",
     name: "PostgreSQL",
   },
@@ -73,12 +69,32 @@ const skills: Array<skillsType> = [
     name: "Redis",
   },
   {
-    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328573/GithubProfile/img/firebase_a6xplw.png",
-    name: "Firebase",
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1762666880/Portfolio%20Assets/Skills/Apache_Solr-Logo.wine-removebg-preview_kyxokk.png",
+    name: "Apache Solr",
+  },
+  {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1762666882/Portfolio%20Assets/Skills/78a4117e9a95e25cb8ef1333c955d603-removebg-preview_g6qwcy.png",
+    name: "REST APIs",
   },
   {
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1688573135/Portfolio%20Assets/Skills/330px-GraphQL_Logo.svg_xj1228.png",
     name: "GraphQL",
+  },
+  {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1762666881/Portfolio%20Assets/Skills/grpc-icon-color-removebg-preview_idrn2u.png",
+    name: "gRPC",
+  },
+  {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1762667172/Portfolio%20Assets/Skills/websocket-logo.BkDW_HW4_Z1LYP1R-removebg-preview_yb13qt.png",
+    name: "WebSockets",
+  },
+  {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1762668380/Portfolio%20Assets/Skills/image-removebg-preview_1_t9yz1v.png",
+    name: "Apache Kafka",
+  },
+  {
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328573/GithubProfile/img/firebase_a6xplw.png",
+    name: "Firebase",
   },
   {
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328573/GithubProfile/img/docker_tlltlc.png",
@@ -90,7 +106,7 @@ const skills: Array<skillsType> = [
   },
   {
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670328574/GithubProfile/img/githubaction_n5inky.png",
-    name: "Github Action",
+    name: "CI/CD",
   },
   {
     src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1721494026/Portfolio%20Assets/Skills/terraform-icon-1803x2048-hodrzd3t_rqjlp8.png",
@@ -101,8 +117,8 @@ const skills: Array<skillsType> = [
     name: "Google Cloud",
   },
   {
-    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1670329169/GithubProfile/img/download-removebg-preview_7_tkuqzw.png",
-    name: "Digital Ocean",
+    src: "https://res.cloudinary.com/dvdi2oaso/image/upload/v1762668488/Portfolio%20Assets/Skills/aws_wmrsi4.png",
+    name: "AWS",
   },
 
 ];

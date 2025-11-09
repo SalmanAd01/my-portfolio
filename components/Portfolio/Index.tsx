@@ -35,9 +35,9 @@ const Index = () => {
               </h1>
             </div>
             <div className="row portfolio-items">
-              {PortfolioData.map((item) => (
+              {PortfolioData.map((item, index) => (
                 <div
-                  key={item.id}
+                  key={index}
                   className={`col-md-${item.col} scroll-animation`}
                   data-animation="fade_from_bottom"
                 >
@@ -47,21 +47,21 @@ const Index = () => {
                         src={item.image}
                         alt="Portfolio"
                         onClick={() => {
-                          setIndexImage(item.id - 1);
+                          setIndexImage(index);
                         }}
                         width={1000}
                         height={1000}
                       />
 
                       <ul className="portfolio-categories">
-                        {item.categories.map((category, id) => (
+                        {item.languages.map((language, id) => (
                           <li key={id}>
                             <p
                               onClick={() => {
-                                setIndexImage(item.id - 1);
+                                setIndexImage(index);
                               }}
                             >
-                              {category}
+                              {language}
                             </p>
                           </li>
                         ))}

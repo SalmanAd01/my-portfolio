@@ -8,11 +8,10 @@ const Index = () => {
 
   useEffect(() => {
     const textArray = [
-      "Machine Learning Developer",
+      "Software Developer",
+      "Backend Developer",
       "Full Stack Developer",
       "Devops Engineer",
-      "Flutter Developer",
-      "Software Engineer",
     ];
     const typingDelay = 100;
     const erasingDelay = 100;
@@ -74,7 +73,7 @@ const Index = () => {
             </h1>
           </div>
           <p className="scroll-animation" data-animation="fade_from_bottom">
-            Passionate about backend development, machine learning, and DevOps,
+            Passionate about Software Development, Backend Development, Full Stack Development, and DevOps.
             I have a knack for designing and coding beautifully simple solutions
             that solve complex problems. Through my expertise in these areas, I
             strive to create elegant designs and cutting-edge technologies that
