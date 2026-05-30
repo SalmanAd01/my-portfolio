@@ -5,7 +5,7 @@ const orderedData: ResumeOrderedDataItem[] = [
     key: "2025 Apr - Present",
     value: [
       {
-        title: "Software Development Engineer - I",
+        title: "Software Development Engineer - II",
         content: "Fynd",
       },
     ],
